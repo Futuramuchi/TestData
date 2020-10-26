@@ -1,0 +1,64 @@
+﻿<Page x:Class="ServiceCenterApp.Pages.PageEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ServiceCenterApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageEdit">
+
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <TextBlock Text="Редактирование"
+                       HorizontalAlignment="Center"
+                       Style="{StaticResource TxbAttentiont}"/>
+            <StackPanel Width="150"
+                        Height="150"
+                        Margin="5"
+                        MouseLeftButtonDown="StackPanel_MouseLeftButtonDown"
+                        Background="DarkGray"
+                        HorizontalAlignment="Right">
+                <Image Height="150"
+                       Width="150"
+                       Name="ServicePhoto"></Image>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Название"
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtName"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Цена"
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtCost"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Длительность в мин."
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtDuration"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Описание"
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtDescription"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Скидка"
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtSale"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <Button Name="BtnEdit"
+                    Click="BtnEdit_Click"
+                    Style="{StaticResource AttentionDefault}"
+                    HorizontalAlignment="Right">Изменить</Button>
+        </StackPanel>
+    </Grid>
+</Page>

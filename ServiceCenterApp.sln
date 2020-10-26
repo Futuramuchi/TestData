@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceCenterApp", "ServiceCenterApp\ServiceCenterApp.csproj", "{303B6E37-2185-4197-96F2-BA28830261EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{303B6E37-2185-4197-96F2-BA28830261EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303B6E37-2185-4197-96F2-BA28830261EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303B6E37-2185-4197-96F2-BA28830261EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303B6E37-2185-4197-96F2-BA28830261EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D335F18-3192-4A42-98CA-AD94A439D41C}
+	EndGlobalSection
+EndGlobal

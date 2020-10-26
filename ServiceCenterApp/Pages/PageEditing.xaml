@@ -1,0 +1,45 @@
+﻿<Page x:Class="ServiceCenterApp.Pages.PageEditing"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ServiceCenterApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageEditing">
+
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Клиент"
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtClient"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Услуга"
+                           Style="{StaticResource TxbDefault}"/>
+                <ComboBox Name="CmbxService"
+                          Style="{StaticResource CmbxDefault}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Дата начала"
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtTime"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Комментарий"
+                           Style="{StaticResource TxbDefault}"/>
+                <TextBox Name="TxtComment"
+                         Style="{StaticResource TxtDefault}"/>
+            </StackPanel>
+            <Button Name="BtnEdit"
+                    Click="BtnEdit_Click"
+                    Style="{StaticResource AttentionDefault}"
+                    HorizontalAlignment="Right">Изменить</Button>
+        </StackPanel>
+    </Grid>
+</Page>
